@@ -14,7 +14,7 @@ _Read this in other languages: [日本語](README.jp.md)_
 
 ## Agent Plugins for AWS
 
-Agent Plugins for AWS equip AI coding agents with the skills to help you architect, deploy, and operate on AWS. Agent plugins are currently supported by Claude Code, Codex, and Cursor.
+Agent Plugins for AWS equip AI coding agents with the skills to help you architect, deploy, and operate on AWS. Agent plugins are currently supported by Claude Code, Codex, Cursor, and Neotask.
 
 AI coding agents are increasingly used in software development, helping developers write, review, and deploy code more efficiently. Agent skills and the broader agent plugin packaging model are emerging as best practices for steering coding agents toward reliable outcomes without bloating model context. Instead of repeatedly pasting long AWS guidance into prompts, developers can now encode that guidance as reusable, versioned capabilities that agents invoke when relevant. This improves determinism, reduces context overhead, and makes agent behavior easier to standardize across teams. Agent plugins act as containers that package different types of expertise artifacts together. A single agent plugin can include:
 
@@ -174,6 +174,50 @@ Replace `deploy-on-aws` with any plugin name from the table above (e.g., `aws-se
 > ```
 
 For issues with the conversion tool, please report them at [EveryInc/compound-engineering-plugin](https://github.com/EveryInc/compound-engineering-plugin/issues).
+
+### Neotask
+
+The plugins are listed on [Neotask Construct](https://construct.neotask.ai). Install a plugin with the Neotask CLI:
+
+```bash
+neotask construct install aws-amazon-location-service
+```
+
+or
+
+```bash
+neotask construct install aws-amplify
+```
+
+or
+
+```bash
+neotask construct install aws-serverless
+```
+
+or
+
+```bash
+neotask construct install aws-codebase-documentor-for-aws
+```
+
+or
+
+```bash
+neotask construct install aws-databases-on-aws
+```
+
+or
+
+```bash
+neotask construct install aws-deploy-on-aws
+```
+
+or
+
+```bash
+neotask construct install aws-sagemaker-ai
+```
 
 ## amazon-location-service
 
